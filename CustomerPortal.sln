@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerPortal.UI", "Custom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerPortal.UI.Tests", "CustomerPortal.UI.Tests\CustomerPortal.UI.Tests.csproj", "{0DA5EFDB-0B6B-4AFA-9292-679F00B4F934}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerPortal.Services", "CustomerPortal.Services\CustomerPortal.Services.csproj", "{1B8F5296-D5D6-4935-AD3D-4851DDFCAEA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerPortal.Services.Tests", "CustomerPortal.Services.Tests\CustomerPortal.Services.Tests.csproj", "{C51F5ABE-5A71-4CDA-B450-2D6F648A526C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{133157AE-7901-441B-A3B0-3C49B13B8304}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +27,20 @@ Global
 		{0DA5EFDB-0B6B-4AFA-9292-679F00B4F934}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DA5EFDB-0B6B-4AFA-9292-679F00B4F934}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DA5EFDB-0B6B-4AFA-9292-679F00B4F934}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B8F5296-D5D6-4935-AD3D-4851DDFCAEA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B8F5296-D5D6-4935-AD3D-4851DDFCAEA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B8F5296-D5D6-4935-AD3D-4851DDFCAEA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B8F5296-D5D6-4935-AD3D-4851DDFCAEA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C51F5ABE-5A71-4CDA-B450-2D6F648A526C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C51F5ABE-5A71-4CDA-B450-2D6F648A526C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C51F5ABE-5A71-4CDA-B450-2D6F648A526C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C51F5ABE-5A71-4CDA-B450-2D6F648A526C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0DA5EFDB-0B6B-4AFA-9292-679F00B4F934} = {133157AE-7901-441B-A3B0-3C49B13B8304}
+		{C51F5ABE-5A71-4CDA-B450-2D6F648A526C} = {133157AE-7901-441B-A3B0-3C49B13B8304}
 	EndGlobalSection
 EndGlobal
