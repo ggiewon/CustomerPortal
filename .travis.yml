@@ -1,2 +1,8 @@
 language: csharp
 solution: CustomerPortal.sln
+install:
+  - nuget restore CustomerPortal.sln
+  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Release CustomerPortal.sln
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./CustomerPortal.UI.Tests/bin/Release/CustomerPortal.UI.Tests.dll
